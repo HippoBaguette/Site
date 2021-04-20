@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavBar from './components/navbar';
 import Buy from './components/buy';
 import Counters from "./components/counters";
+import Counter from './components/counter';
 
 class App extends Component {
     state = {
@@ -14,7 +15,7 @@ class App extends Component {
     }
 
 
-    handleIncrement = counter => {
+    handleIncrement = (counter: Counter) => {
         const counters = [...this.state.counters];
         const index = counters.indexOf(counter);
         counters[index] = { ...counter };

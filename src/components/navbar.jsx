@@ -7,7 +7,7 @@ class Navbar extends Component {
             <nav className="navbar navbar-light bg-light">
                     <a className="navbar-brand" href="https://github.com/HippoBaguette">
 
-                        Meaningful and thought out shop name
+                        Shop Name
                         
                         <div className="btn btn-warning m-2">
                             <span >Your Cart:</span>
