@@ -2,6 +2,18 @@ import React, { Component } from 'react';
 import NavBar from './components/navbar';
 import Buy from './components/buy';
 import Counters from "./components/counters";
+import Background from './components/componentassests/5rsow6fjhqw11.jpg';
+import Content from './components/content';
+
+let sectionStyle = {
+    backgroundImage: `url(${Background})`,
+    height: "100vh",
+    width: "auto",
+    opacity: "0.6",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+};
 
 class App extends Component {
     state = {
@@ -42,15 +54,15 @@ class App extends Component {
         return (
             <div>
                 <NavBar totalCounters={this.state.counters.filter(c => c.value > 0).length} />
-                <main className="container">
-                    <Counters
-                        counters={this.state.counters}
-                        onReset={this.handleReset}
-                        onIncrement={this.handleIncrement}
-                        onDelete={this.handleDelete} />
-                    <Buy onBuy={this.handleBuy} />
+            <div style={sectionStyle}>
+                
+                <main className="container" >
+                    {
+                        <Content />
+                    }
                 </main>
 
+            </div>
             </div>
         )
     }
