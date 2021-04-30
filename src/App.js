@@ -6,7 +6,7 @@ import Background from './components/componentassests/5rsow6fjhqw11.jpg';
 import Content from './components/content';
 
 let sectionStyle = {
-    backgroundImage: `url(${Background})`,
+    backgroundImage: `url(https://github.com/HippoBaguette/Site/blob/master/src/components/componentassests/5rsow6fjhqw11.jpg?raw=true)`,
     height: "100vh",
     width: "auto",
     opacity: "0.6",
