@@ -4,9 +4,10 @@ import Buy from './components/buy';
 import Counters from "./components/counters";
 import Content from './components/content';
 import ContentBg from './components/componentassests/contentbg'
+import Background from './components/componentassests/5rsow6fjhqw11.jpg'
 
 let sectionStyle = {
-    backgroundImage: `url(https://static.vecteezy.com/system/resources/previews/001/227/759/original/abstract-modern-cool-geometric-pattern-background-vector.jpg)`,
+    backgroundImage: `url(${Background})`,
     // background: "#2d3436",
     height: window.innerHeight,
     width: "100%",
