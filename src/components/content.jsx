@@ -7,8 +7,8 @@ let style = {
   alignItems: "center",
   height: window.innerHeight,
   fontSize: "100px",
-  color: "#2d3436",
-  textShadow: "2px 2px #636e72"
+  color: "#ecf0f1",
+  textShadow: "2px 2px #bdc3c7"
 }
 let pad = {
     paddingTop: "500px"
