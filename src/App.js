@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import NavBar from './components/navbar';
-import Buy from './components/buy';
-import Counters from "./components/counters";
 import Content from './components/content';
+import Empty from './components/empty';
 import ContentBg from './components/componentassests/contentbg'
 
 let sectionStyle = {
-    backgroundImage: `url(https://static.vecteezy.com/system/resources/previews/001/227/759/original/abstract-modern-cool-geometric-pattern-background-vector.jpg)`,
+    backgroundImage: `url(https://i.redd.it/5rsow6fjhqw11.jpg)`,
     // background: "#2d3436",
     height: window.innerHeight,
     width: "100%",
@@ -18,9 +16,6 @@ let sectionStyle = {
 };
 
 class App extends Component {
-    constructor () {
-        super()
-    }
 
     state = {
         counters: [
@@ -66,6 +61,7 @@ class App extends Component {
                     
                         <ContentBg />
                         <Content />
+                        <Empty />
                         
                     
                 </main>

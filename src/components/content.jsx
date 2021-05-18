@@ -7,11 +7,11 @@ let style = {
   alignItems: "center",
   height: window.innerHeight,
   fontSize: "100px",
-  color: "#2d3436",
-  textShadow: "2px 2px #636e72"
+  color: "#ecf0f1",
+  textShadow: "2px 2px #bdc3c7"
 }
 let pad = {
-    paddingTop: "500px"
+    paddingTop: window.innerHeight / 4
 }
 class Content extends Component {
     state = {  }
@@ -19,7 +19,8 @@ class Content extends Component {
         return (
             <div>
                 <span className="text-center" style={style}>Hippo</span>
-                <h1 style={pad}>E</h1>
+                <h1 style={pad}>ABOUT:</h1>
+                <p>I exist</p>
             </div>
             );
     }
