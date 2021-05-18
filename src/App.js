@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import Content from './components/content';
 import Empty from './components/empty';
 import ContentBg from './components/componentassests/contentbg'
+import Background from './components/componentassests/5rsow6fjhqw11.jpg'
 
 let sectionStyle = {
-    backgroundImage: `url(https://i.redd.it/5rsow6fjhqw11.jpg)`,
+    backgroundImage: `url(${Background})`,
     // background: "#2d3436",
     height: window.innerHeight,
     width: "100%",
@@ -17,40 +18,6 @@ let sectionStyle = {
 
 class App extends Component {
 
-    state = {
-        counters: [
-            { id: 1, value: 0, name: "Apple" },
-            { id: 2, value: 2, name: "Banana" },
-            { id: 3, value: 0, name: "Pear" },
-            { id: 4, value: 0, name: "Plum" }
-        ]
-    }
-
-
-    handleIncrement = counter => {
-        const counters = [...this.state.counters];
-        const index = counters.indexOf(counter);
-        counters[index] = { ...counter };
-        counters[index].value++;
-        this.setState({ counters })
-    }
-    handleDelete = counter => {
-        const counters = [...this.state.counters];
-        const index = counters.indexOf(counter);
-        counters[index] = { ...counter };
-        counters[index].value = 0;
-        this.setState({ counters })
-    }
-    handleReset = () => {
-        const counters = this.state.counters.map(c => {
-            c.value = 0;
-            return c;
-        });
-        this.setState({ counters })
-    }
-    handleBuy = () => {
-        console.log('e')
-    }
     render() {
         return (
             <div>
