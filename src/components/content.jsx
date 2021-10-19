@@ -20,7 +20,7 @@ class Content extends Component {
             <div>
                 <span className="text-center" style={style}>Hippo</span>
                 <h1 style={pad}>ABOUT:</h1>
-                <p>I exist. No cap. profesional shitposter</p>
+                <p>I exist. No cap.</p>
             </div>
             );
     }
